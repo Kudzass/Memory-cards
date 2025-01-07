@@ -63,3 +63,4 @@ function checkMatch() {
     }, 1000);
   }
 }
+restartButton.addEventListener("click", startGame);
