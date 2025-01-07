@@ -48,5 +48,11 @@ function checkMatch() {
     card2.classList.add("matched");
     matchedCards.push(card1, card2);
     flippedCards = [];
+    if (matchedCards.length === cards.length) {
+      setTimeout(() => {
+        alert("Congratulations! You won!");
+      }, 500);
+    }
+  } else {
   }
 }
