@@ -64,3 +64,4 @@ function checkMatch() {
   }
 }
 restartButton.addEventListener("click", startGame);
+startGame();
