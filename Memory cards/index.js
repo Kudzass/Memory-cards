@@ -28,3 +28,15 @@ function shuffle(array) {
   }
   return array;
 }
+function flipCard() {
+  if (flippedCards.length >= 2 || this.classList.contains("flipped")) {
+    return;
+  }
+  this.classList.add("flipped");
+  this.textContent = this.dataset.symbol;
+  flippedCards.push(this);
+
+  if (flippedCards.length === 2) {
+    checkMatch();
+  }
+}
