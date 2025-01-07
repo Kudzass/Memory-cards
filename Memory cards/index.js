@@ -40,3 +40,13 @@ function flipCard() {
     checkMatch();
   }
 }
+function checkMatch() {
+  let [card1, card2] = flippedCards;
+
+  if (card1.dataset.symbol === card2.dataset.symbol) {
+    card1.classList.add("matched");
+    card2.classList.add("matched");
+    matchedCards.push(card1, card2);
+    flippedCards = [];
+  }
+}
