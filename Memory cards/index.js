@@ -9,4 +9,7 @@ function startGame() {
   gameBoard.innerHTML = "";
   flippedCards = [];
   matchedCards = [];
+
+  cards = [...symbols, ...symbols];
+  cards = shuffle(cards);
 }
