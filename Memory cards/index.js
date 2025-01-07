@@ -54,5 +54,12 @@ function checkMatch() {
       }, 500);
     }
   } else {
+    setTimeout(() => {
+      card1.classList.remove("flipped");
+      card1.textContent = "?";
+      card2.classList.remove("flipped");
+      card2.textContent = "?";
+      flippedCards = [];
+    }, 1000);
   }
 }
