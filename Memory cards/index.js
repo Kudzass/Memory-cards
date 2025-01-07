@@ -12,4 +12,12 @@ function startGame() {
 
   cards = [...symbols, ...symbols];
   cards = shuffle(cards);
+  for (let symbol of cards) {
+    let card = document.createElement("div");
+    card.className = "card";
+    card.dataset.symbol = symbol;
+    card.textContent = "?";
+    card.addEventListener("click", flipCard);
+    gameBoard.appendChild(card);
+  }
 }
