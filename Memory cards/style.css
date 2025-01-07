@@ -29,3 +29,13 @@ h1 {
   cursor: pointer;
   border-radius: 5px;
 }
+.card.flipped {
+  background-color: white;
+  color: black;
+}
+
+.card.matched {
+  background-color: lightgreen;
+  color: white;
+  pointer-events: none;
+}
